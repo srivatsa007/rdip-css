@@ -1,13 +1,36 @@
 <html>
 <head>
 <style>
-div {
-  border: 5px solid white;
- padding:10px 20px 30px 190px;
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
 
-body {
-  background-image: url("https://images.moneycontrol.com/static-mcnews/2020/08/1-copy-770x433.jpg?impolicy=website&width=770&height=431");
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: grey;
+}
+
+.active {
+  background-color: blue;
+<!--navbar-->
+  div {
+  border: 5px solid white;
+ padding:10px 20px 30px 190px;
 }
 h1{ 
 color: white;
@@ -24,7 +47,13 @@ position: center;
 </style>
 </head>
 <body>
- 
+ <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+
 <h1> BATMAN </h1>
 <p>This page has an image as the background!</p>
 <div> <img src="https://i.redd.it/5k6zfft4z6e41.png" alt="batman"width="150" height="200"style="vertical-align:middle;margin:0px 10px">
